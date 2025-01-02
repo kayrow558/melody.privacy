@@ -1,0 +1,3162 @@
+<!DOCTYPE html><html lang="pt-BR" style="width: 100% !important; margin: 0 !important; padding: 0 !important;" class=""><head>
+<meta charset="utf-8">
+<script async="" src="js/gtm.js"></script><script async="" src="js/gtm_1.js"></script><script async="" src="js/fbevents.js"></script><script src="js/latest.js" data-utmify-prevent-subids="" data-utmify-fast-start="" async="" defer=""></script>
+<script>
+  window.pixelId = "66e976d75da4fd3262c9813b";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script><script async="" defer="" src="js/pixel.js"></script>
+<script src="js/latest_1.js" data-utmify-prevent-subids="" async="" defer=""></script>
+<script>
+  // ALTERE O LINK PARA A PÁGINA QUE QUISER MOSTRAR QUANDO O USUÁRIO TENTAR SAIR
+  const link = 'https://privacymodel.com.br/melody/';
+
+  function setBackRedirect(url) {
+    let urlBackRedirect = url;
+    urlBackRedirect = urlBackRedirect =
+      urlBackRedirect.trim() +
+      (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
+      document.location.search.replace('?', '').toString();
+
+    history.pushState({}, '', location.href);
+    history.pushState({}, '', location.href);
+    history.pushState({}, '', location.href);
+
+    window.addEventListener('popstate', () => {
+      console.log('onpopstate', urlBackRedirect);
+      setTimeout(() => {
+        location.href = urlBackRedirect;
+      }, 1);
+    });
+  }
+
+  setBackRedirect(link);
+</script>
+
+  <link rel="stylesheet" href="css/all.min_1.css" crossorigin="anonymous">
+  
+	
+	<style type="text/css">
+	:root,
+	:host {
+		--fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+		--fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+		--fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+		--fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+		--fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+		--fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+		--fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+		--fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+		--fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+	}
+
+	svg:not(:root).svg-inline--fa,
+	svg:not(:host).svg-inline--fa {
+		overflow: visible;
+		box-sizing: content-box;
+	}
+
+	.svg-inline--fa {
+		display: var(--fa-display, inline-block);
+		height: 1em;
+		overflow: visible;
+		vertical-align: -0.125em;
+	}
+
+	.svg-inline--fa.fa-2xs {
+		vertical-align: 0.1em;
+	}
+
+	.svg-inline--fa.fa-xs {
+		vertical-align: 0em;
+	}
+
+	.svg-inline--fa.fa-sm {
+		vertical-align: -0.0714285705em;
+	}
+
+	.svg-inline--fa.fa-lg {
+		vertical-align: -0.2em;
+	}
+
+	.svg-inline--fa.fa-xl {
+		vertical-align: -0.25em;
+	}
+
+	.svg-inline--fa.fa-2xl {
+		vertical-align: -0.3125em;
+	}
+
+	.svg-inline--fa.fa-pull-left {
+		margin-right: var(--fa-pull-margin, 0.3em);
+		width: auto;
+	}
+
+	.svg-inline--fa.fa-pull-right {
+		margin-left: var(--fa-pull-margin, 0.3em);
+		width: auto;
+	}
+
+	.svg-inline--fa.fa-li {
+		width: var(--fa-li-width, 2em);
+		top: 0.25em;
+	}
+
+	.svg-inline--fa.fa-fw {
+		width: var(--fa-fw-width, 1.25em);
+	}
+
+	.fa-layers svg.svg-inline--fa {
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.fa-layers-counter,
+	.fa-layers-text {
+		display: inline-block;
+		position: absolute;
+		text-align: center;
+	}
+
+	.fa-layers {
+		display: inline-block;
+		height: 1em;
+		position: relative;
+		text-align: center;
+		vertical-align: -0.125em;
+		width: 1em;
+	}
+
+	.fa-layers svg.svg-inline--fa {
+		-webkit-transform-origin: center center;
+		transform-origin: center center;
+	}
+
+	.fa-layers-text {
+		left: 50%;
+		top: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		-webkit-transform-origin: center center;
+		transform-origin: center center;
+	}
+
+	.fa-layers-counter {
+		background-color: var(--fa-counter-background-color, #ff253a);
+		border-radius: var(--fa-counter-border-radius, 1em);
+		box-sizing: border-box;
+		color: var(--fa-inverse, #fff);
+		line-height: var(--fa-counter-line-height, 1);
+		max-width: var(--fa-counter-max-width, 5em);
+		min-width: var(--fa-counter-min-width, 1.5em);
+		overflow: hidden;
+		padding: var(--fa-counter-padding, 0.25em 0.5em);
+		right: var(--fa-right, 0);
+		text-overflow: ellipsis;
+		top: var(--fa-top, 0);
+		-webkit-transform: scale(var(--fa-counter-scale, 0.25));
+		transform: scale(var(--fa-counter-scale, 0.25));
+		-webkit-transform-origin: top right;
+		transform-origin: top right;
+	}
+
+	.fa-layers-bottom-right {
+		bottom: var(--fa-bottom, 0);
+		right: var(--fa-right, 0);
+		top: auto;
+		-webkit-transform: scale(var(--fa-layers-scale, 0.25));
+		transform: scale(var(--fa-layers-scale, 0.25));
+		-webkit-transform-origin: bottom right;
+		transform-origin: bottom right;
+	}
+
+	.fa-layers-bottom-left {
+		bottom: var(--fa-bottom, 0);
+		left: var(--fa-left, 0);
+		right: auto;
+		top: auto;
+		-webkit-transform: scale(var(--fa-layers-scale, 0.25));
+		transform: scale(var(--fa-layers-scale, 0.25));
+		-webkit-transform-origin: bottom left;
+		transform-origin: bottom left;
+	}
+
+	.fa-layers-top-right {
+		top: var(--fa-top, 0);
+		right: var(--fa-right, 0);
+		-webkit-transform: scale(var(--fa-layers-scale, 0.25));
+		transform: scale(var(--fa-layers-scale, 0.25));
+		-webkit-transform-origin: top right;
+		transform-origin: top right;
+	}
+
+	.fa-layers-top-left {
+		left: var(--fa-left, 0);
+		right: auto;
+		top: var(--fa-top, 0);
+		-webkit-transform: scale(var(--fa-layers-scale, 0.25));
+		transform: scale(var(--fa-layers-scale, 0.25));
+		-webkit-transform-origin: top left;
+		transform-origin: top left;
+	}
+
+	.fa-1x {
+		font-size: 1em;
+	}
+
+	.fa-2x {
+		font-size: 2em;
+	}
+
+	.fa-3x {
+		font-size: 3em;
+	}
+
+	.fa-4x {
+		font-size: 4em;
+	}
+
+	.fa-5x {
+		font-size: 5em;
+	}
+
+	.fa-6x {
+		font-size: 6em;
+	}
+
+	.fa-7x {
+		font-size: 7em;
+	}
+
+	.fa-8x {
+		font-size: 8em;
+	}
+
+	.fa-9x {
+		font-size: 9em;
+	}
+
+	.fa-10x {
+		font-size: 10em;
+	}
+
+	.fa-2xs {
+		font-size: 0.625em;
+		line-height: 0.1em;
+		vertical-align: 0.225em;
+	}
+
+	.fa-xs {
+		font-size: 0.75em;
+		line-height: 0.0833333337em;
+		vertical-align: 0.125em;
+	}
+
+	.fa-sm {
+		font-size: 0.875em;
+		line-height: 0.0714285718em;
+		vertical-align: 0.0535714295em;
+	}
+
+	.fa-lg {
+		font-size: 1.25em;
+		line-height: 0.05em;
+		vertical-align: -0.075em;
+	}
+
+	.fa-xl {
+		font-size: 1.5em;
+		line-height: 0.0416666682em;
+		vertical-align: -0.125em;
+	}
+
+	.fa-2xl {
+		font-size: 2em;
+		line-height: 0.03125em;
+		vertical-align: -0.1875em;
+	}
+
+	.fa-fw {
+		text-align: center;
+		width: 1.25em;
+	}
+
+	.fa-ul {
+		list-style-type: none;
+		margin-left: var(--fa-li-margin, 2.5em);
+		padding-left: 0;
+	}
+
+	.fa-ul>li {
+		position: relative;
+	}
+
+	.fa-li {
+		left: calc(var(--fa-li-width, 2em) * -1);
+		position: absolute;
+		text-align: center;
+		width: var(--fa-li-width, 2em);
+		line-height: inherit;
+	}
+
+	.fa-border {
+		border-color: var(--fa-border-color, #eee);
+		border-radius: var(--fa-border-radius, 0.1em);
+		border-style: var(--fa-border-style, solid);
+		border-width: var(--fa-border-width, 0.08em);
+		padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+	}
+
+	.fa-pull-left {
+		float: left;
+		margin-right: var(--fa-pull-margin, 0.3em);
+	}
+
+	.fa-pull-right {
+		float: right;
+		margin-left: var(--fa-pull-margin, 0.3em);
+	}
+
+	.fa-beat {
+		-webkit-animation-name: fa-beat;
+		animation-name: fa-beat;
+		-webkit-animation-delay: var(--fa-animation-delay, 0s);
+		animation-delay: var(--fa-animation-delay, 0s);
+		-webkit-animation-direction: var(--fa-animation-direction, normal);
+		animation-direction: var(--fa-animation-direction, normal);
+		-webkit-animation-duration: var(--fa-animation-duration, 1s);
+		animation-duration: var(--fa-animation-duration, 1s);
+		-webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+		animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+		-webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+		animation-timing-function: var(--fa-animation-timing, ease-in-out);
+	}
+
+	.fa-bounce {
+		-webkit-animation-name: fa-bounce;
+		animation-name: fa-bounce;
+		-webkit-animation-delay: var(--fa-animation-delay, 0s);
+		animation-delay: var(--fa-animation-delay, 0s);
+		-webkit-animation-direction: var(--fa-animation-direction, normal);
+		animation-direction: var(--fa-animation-direction, normal);
+		-webkit-animation-duration: var(--fa-animation-duration, 1s);
+		animation-duration: var(--fa-animation-duration, 1s);
+		-webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+		animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+		-webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+		animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+	}
+
+	.fa-fade {
+		-webkit-animation-name: fa-fade;
+		animation-name: fa-fade;
+		-webkit-animation-delay: var(--fa-animation-delay, 0s);
+		animation-delay: var(--fa-animation-delay, 0s);
+		-webkit-animation-direction: var(--fa-animation-direction, normal);
+		animation-direction: var(--fa-animation-direction, normal);
+		-webkit-animation-duration: var(--fa-animation-duration, 1s);
+		animation-duration: var(--fa-animation-duration, 1s);
+		-webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+		animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+		-webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+		animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+	}
+
+	.fa-beat-fade {
+		-webkit-animation-name: fa-beat-fade;
+		animation-name: fa-beat-fade;
+		-webkit-animation-delay: var(--fa-animation-delay, 0s);
+		animation-delay: var(--fa-animation-delay, 0s);
+		-webkit-animation-direction: var(--fa-animation-direction, normal);
+		animation-direction: var(--fa-animation-direction, normal);
+		-webkit-animation-duration: var(--fa-animation-duration, 1s);
+		animation-duration: var(--fa-animation-duration, 1s);
+		-webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+		animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+		-webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+		animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+	}
+
+	.fa-flip {
+		-webkit-animation-name: fa-flip;
+		animation-name: fa-flip;
+		-webkit-animation-delay: var(--fa-animation-delay, 0s);
+		animation-delay: var(--fa-animation-delay, 0s);
+		-webkit-animation-direction: var(--fa-animation-direction, normal);
+		animation-direction: var(--fa-animation-direction, normal);
+		-webkit-animation-duration: var(--fa-animation-duration, 1s);
+		animation-duration: var(--fa-animation-duration, 1s);
+		-webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+		animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+		-webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+		animation-timing-function: var(--fa-animation-timing, ease-in-out);
+	}
+
+	.fa-shake {
+		-webkit-animation-name: fa-shake;
+		animation-name: fa-shake;
+		-webkit-animation-delay: var(--fa-animation-delay, 0s);
+		animation-delay: var(--fa-animation-delay, 0s);
+		-webkit-animation-direction: var(--fa-animation-direction, normal);
+		animation-direction: var(--fa-animation-direction, normal);
+		-webkit-animation-duration: var(--fa-animation-duration, 1s);
+		animation-duration: var(--fa-animation-duration, 1s);
+		-webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+		animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+		-webkit-animation-timing-function: var(--fa-animation-timing, linear);
+		animation-timing-function: var(--fa-animation-timing, linear);
+	}
+
+	.fa-spin {
+		-webkit-animation-name: fa-spin;
+		animation-name: fa-spin;
+		-webkit-animation-delay: var(--fa-animation-delay, 0s);
+		animation-delay: var(--fa-animation-delay, 0s);
+		-webkit-animation-direction: var(--fa-animation-direction, normal);
+		animation-direction: var(--fa-animation-direction, normal);
+		-webkit-animation-duration: var(--fa-animation-duration, 2s);
+		animation-duration: var(--fa-animation-duration, 2s);
+		-webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+		animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+		-webkit-animation-timing-function: var(--fa-animation-timing, linear);
+		animation-timing-function: var(--fa-animation-timing, linear);
+	}
+
+	.fa-spin-reverse {
+		--fa-animation-direction: reverse;
+	}
+
+	.fa-pulse,
+	.fa-spin-pulse {
+		-webkit-animation-name: fa-spin;
+		animation-name: fa-spin;
+		-webkit-animation-direction: var(--fa-animation-direction, normal);
+		animation-direction: var(--fa-animation-direction, normal);
+		-webkit-animation-duration: var(--fa-animation-duration, 1s);
+		animation-duration: var(--fa-animation-duration, 1s);
+		-webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+		animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+		-webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+		animation-timing-function: var(--fa-animation-timing, steps(8));
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+
+		.fa-beat,
+		.fa-bounce,
+		.fa-fade,
+		.fa-beat-fade,
+		.fa-flip,
+		.fa-pulse,
+		.fa-shake,
+		.fa-spin,
+		.fa-spin-pulse {
+			-webkit-animation-delay: -1ms;
+			animation-delay: -1ms;
+			-webkit-animation-duration: 1ms;
+			animation-duration: 1ms;
+			-webkit-animation-iteration-count: 1;
+			animation-iteration-count: 1;
+			-webkit-transition-delay: 0s;
+			transition-delay: 0s;
+			-webkit-transition-duration: 0s;
+			transition-duration: 0s;
+		}
+	}
+
+	@-webkit-keyframes fa-beat {
+
+		0%,
+		90% {
+			-webkit-transform: scale(1);
+			transform: scale(1);
+		}
+
+		45% {
+			-webkit-transform: scale(var(--fa-beat-scale, 1.25));
+			transform: scale(var(--fa-beat-scale, 1.25));
+		}
+	}
+
+	@keyframes fa-beat {
+
+		0%,
+		90% {
+			-webkit-transform: scale(1);
+			transform: scale(1);
+		}
+
+		45% {
+			-webkit-transform: scale(var(--fa-beat-scale, 1.25));
+			transform: scale(var(--fa-beat-scale, 1.25));
+		}
+	}
+
+	@-webkit-keyframes fa-bounce {
+		0% {
+			-webkit-transform: scale(1, 1) translateY(0);
+			transform: scale(1, 1) translateY(0);
+		}
+
+		10% {
+			-webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+			transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+		}
+
+		30% {
+			-webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+			transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+		}
+
+		50% {
+			-webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+			transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+		}
+
+		57% {
+			-webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+			transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+		}
+
+		64% {
+			-webkit-transform: scale(1, 1) translateY(0);
+			transform: scale(1, 1) translateY(0);
+		}
+
+		100% {
+			-webkit-transform: scale(1, 1) translateY(0);
+			transform: scale(1, 1) translateY(0);
+		}
+	}
+
+	@keyframes fa-bounce {
+		0% {
+			-webkit-transform: scale(1, 1) translateY(0);
+			transform: scale(1, 1) translateY(0);
+		}
+
+		10% {
+			-webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+			transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+		}
+
+		30% {
+			-webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+			transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+		}
+
+		50% {
+			-webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+			transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+		}
+
+		57% {
+			-webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+			transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+		}
+
+		64% {
+			-webkit-transform: scale(1, 1) translateY(0);
+			transform: scale(1, 1) translateY(0);
+		}
+
+		100% {
+			-webkit-transform: scale(1, 1) translateY(0);
+			transform: scale(1, 1) translateY(0);
+		}
+	}
+
+	@-webkit-keyframes fa-fade {
+		50% {
+			opacity: var(--fa-fade-opacity, 0.4);
+		}
+	}
+
+	@keyframes fa-fade {
+		50% {
+			opacity: var(--fa-fade-opacity, 0.4);
+		}
+	}
+
+	@-webkit-keyframes fa-beat-fade {
+
+		0%,
+		100% {
+			opacity: var(--fa-beat-fade-opacity, 0.4);
+			-webkit-transform: scale(1);
+			transform: scale(1);
+		}
+
+		50% {
+			opacity: 1;
+			-webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+			transform: scale(var(--fa-beat-fade-scale, 1.125));
+		}
+	}
+
+	@keyframes fa-beat-fade {
+
+		0%,
+		100% {
+			opacity: var(--fa-beat-fade-opacity, 0.4);
+			-webkit-transform: scale(1);
+			transform: scale(1);
+		}
+
+		50% {
+			opacity: 1;
+			-webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+			transform: scale(var(--fa-beat-fade-scale, 1.125));
+		}
+	}
+
+	@-webkit-keyframes fa-flip {
+		50% {
+			-webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+			transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+		}
+	}
+
+	@keyframes fa-flip {
+		50% {
+			-webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+			transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+		}
+	}
+
+	@-webkit-keyframes fa-shake {
+		0% {
+			-webkit-transform: rotate(-15deg);
+			transform: rotate(-15deg);
+		}
+
+		4% {
+			-webkit-transform: rotate(15deg);
+			transform: rotate(15deg);
+		}
+
+		8%,
+		24% {
+			-webkit-transform: rotate(-18deg);
+			transform: rotate(-18deg);
+		}
+
+		12%,
+		28% {
+			-webkit-transform: rotate(18deg);
+			transform: rotate(18deg);
+		}
+
+		16% {
+			-webkit-transform: rotate(-22deg);
+			transform: rotate(-22deg);
+		}
+
+		20% {
+			-webkit-transform: rotate(22deg);
+			transform: rotate(22deg);
+		}
+
+		32% {
+			-webkit-transform: rotate(-12deg);
+			transform: rotate(-12deg);
+		}
+
+		36% {
+			-webkit-transform: rotate(12deg);
+			transform: rotate(12deg);
+		}
+
+		40%,
+		100% {
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+	}
+
+	@keyframes fa-shake {
+		0% {
+			-webkit-transform: rotate(-15deg);
+			transform: rotate(-15deg);
+		}
+
+		4% {
+			-webkit-transform: rotate(15deg);
+			transform: rotate(15deg);
+		}
+
+		8%,
+		24% {
+			-webkit-transform: rotate(-18deg);
+			transform: rotate(-18deg);
+		}
+
+		12%,
+		28% {
+			-webkit-transform: rotate(18deg);
+			transform: rotate(18deg);
+		}
+
+		16% {
+			-webkit-transform: rotate(-22deg);
+			transform: rotate(-22deg);
+		}
+
+		20% {
+			-webkit-transform: rotate(22deg);
+			transform: rotate(22deg);
+		}
+
+		32% {
+			-webkit-transform: rotate(-12deg);
+			transform: rotate(-12deg);
+		}
+
+		36% {
+			-webkit-transform: rotate(12deg);
+			transform: rotate(12deg);
+		}
+
+		40%,
+		100% {
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+	}
+
+	@-webkit-keyframes fa-spin {
+		0% {
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+
+		100% {
+			-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes fa-spin {
+		0% {
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+
+		100% {
+			-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+	}
+
+	.fa-rotate-90 {
+		-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
+	}
+
+	.fa-rotate-180 {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+
+	.fa-rotate-270 {
+		-webkit-transform: rotate(270deg);
+		transform: rotate(270deg);
+	}
+
+	.fa-flip-horizontal {
+		-webkit-transform: scale(-1, 1);
+		transform: scale(-1, 1);
+	}
+
+	.fa-flip-vertical {
+		-webkit-transform: scale(1, -1);
+		transform: scale(1, -1);
+	}
+
+	.fa-flip-both,
+	.fa-flip-horizontal.fa-flip-vertical {
+		-webkit-transform: scale(-1, -1);
+		transform: scale(-1, -1);
+	}
+
+	.fa-rotate-by {
+		-webkit-transform: rotate(var(--fa-rotate-angle, none));
+		transform: rotate(var(--fa-rotate-angle, none));
+	}
+
+	.fa-stack {
+		display: inline-block;
+		vertical-align: middle;
+		height: 2em;
+		position: relative;
+		width: 2.5em;
+	}
+
+	.fa-stack-1x,
+	.fa-stack-2x {
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: var(--fa-stack-z-index, auto);
+	}
+
+	.svg-inline--fa.fa-stack-1x {
+		height: 1em;
+		width: 1.25em;
+	}
+
+	.svg-inline--fa.fa-stack-2x {
+		height: 2em;
+		width: 2.5em;
+	}
+
+	.fa-inverse {
+		color: var(--fa-inverse, #fff);
+	}
+
+	.sr-only,
+	.fa-sr-only {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border-width: 0;
+	}
+
+	.sr-only-focusable:not(:focus),
+	.fa-sr-only-focusable:not(:focus) {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border-width: 0;
+	}
+
+	.svg-inline--fa .fa-primary {
+		fill: var(--fa-primary-color, currentColor);
+		opacity: var(--fa-primary-opacity, 1);
+	}
+
+	.svg-inline--fa .fa-secondary {
+		fill: var(--fa-secondary-color, currentColor);
+		opacity: var(--fa-secondary-opacity, 0.4);
+	}
+
+	.svg-inline--fa.fa-swap-opacity .fa-primary {
+		opacity: var(--fa-secondary-opacity, 0.4);
+	}
+
+	.svg-inline--fa.fa-swap-opacity .fa-secondary {
+		opacity: var(--fa-primary-opacity, 1);
+	}
+
+	.svg-inline--fa mask .fa-primary,
+	.svg-inline--fa mask .fa-secondary {
+		fill: black;
+	}
+
+	.fad.fa-inverse,
+	.fa-duotone.fa-inverse {
+		color: var(--fa-inverse, #fff);
+	}
+	</style>
+	<style type="text/css">
+	.swal-icon--error {
+		border-color: #f27474;
+		-webkit-animation: animateErrorIcon .5s;
+		animation: animateErrorIcon .5s
+	}
+
+	.swal-icon--error__x-mark {
+		position: relative;
+		display: block;
+		-webkit-animation: animateXMark .5s;
+		animation: animateXMark .5s
+	}
+
+	.swal-icon--error__line {
+		position: absolute;
+		height: 5px;
+		width: 47px;
+		background-color: #f27474;
+		display: block;
+		top: 37px;
+		border-radius: 2px
+	}
+
+	.swal-icon--error__line--left {
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+		left: 17px
+	}
+
+	.swal-icon--error__line--right {
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		right: 16px
+	}
+
+	@-webkit-keyframes animateErrorIcon {
+		0% {
+			-webkit-transform: rotateX(100deg);
+			transform: rotateX(100deg);
+			opacity: 0
+		}
+
+		to {
+			-webkit-transform: rotateX(0deg);
+			transform: rotateX(0deg);
+			opacity: 1
+		}
+	}
+
+	@keyframes animateErrorIcon {
+		0% {
+			-webkit-transform: rotateX(100deg);
+			transform: rotateX(100deg);
+			opacity: 0
+		}
+
+		to {
+			-webkit-transform: rotateX(0deg);
+			transform: rotateX(0deg);
+			opacity: 1
+		}
+	}
+
+	@-webkit-keyframes animateXMark {
+		0% {
+			-webkit-transform: scale(.4);
+			transform: scale(.4);
+			margin-top: 26px;
+			opacity: 0
+		}
+
+		50% {
+			-webkit-transform: scale(.4);
+			transform: scale(.4);
+			margin-top: 26px;
+			opacity: 0
+		}
+
+		80% {
+			-webkit-transform: scale(1.15);
+			transform: scale(1.15);
+			margin-top: -6px
+		}
+
+		to {
+			-webkit-transform: scale(1);
+			transform: scale(1);
+			margin-top: 0;
+			opacity: 1
+		}
+	}
+
+	@keyframes animateXMark {
+		0% {
+			-webkit-transform: scale(.4);
+			transform: scale(.4);
+			margin-top: 26px;
+			opacity: 0
+		}
+
+		50% {
+			-webkit-transform: scale(.4);
+			transform: scale(.4);
+			margin-top: 26px;
+			opacity: 0
+		}
+
+		80% {
+			-webkit-transform: scale(1.15);
+			transform: scale(1.15);
+			margin-top: -6px
+		}
+
+		to {
+			-webkit-transform: scale(1);
+			transform: scale(1);
+			margin-top: 0;
+			opacity: 1
+		}
+	}
+
+	.swal-icon--warning {
+		border-color: #f8bb86;
+		-webkit-animation: pulseWarning .75s infinite alternate;
+		animation: pulseWarning .75s infinite alternate
+	}
+
+	.swal-icon--warning__body {
+		width: 5px;
+		height: 47px;
+		top: 10px;
+		border-radius: 2px;
+		margin-left: -2px
+	}
+
+	.swal-icon--warning__body,
+	.swal-icon--warning__dot {
+		position: absolute;
+		left: 50%;
+		background-color: #f8bb86
+	}
+
+	.swal-icon--warning__dot {
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		margin-left: -4px;
+		bottom: -11px
+	}
+
+	@-webkit-keyframes pulseWarning {
+		0% {
+			border-color: #f8d486
+		}
+
+		to {
+			border-color: #f8bb86
+		}
+	}
+
+	@keyframes pulseWarning {
+		0% {
+			border-color: #f8d486
+		}
+
+		to {
+			border-color: #f8bb86
+		}
+	}
+
+	.swal-icon--success {
+		border-color: #a5dc86
+	}
+
+	.swal-icon--success:after,
+	.swal-icon--success:before {
+		content: "";
+		border-radius: 50%;
+		position: absolute;
+		width: 60px;
+		height: 120px;
+		background: #fff;
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg)
+	}
+
+	.swal-icon--success:before {
+		border-radius: 120px 0 0 120px;
+		top: -7px;
+		left: -33px;
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		-webkit-transform-origin: 60px 60px;
+		transform-origin: 60px 60px
+	}
+
+	.swal-icon--success:after {
+		border-radius: 0 120px 120px 0;
+		top: -11px;
+		left: 30px;
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		-webkit-transform-origin: 0 60px;
+		transform-origin: 0 60px;
+		-webkit-animation: rotatePlaceholder 4.25s ease-in;
+		animation: rotatePlaceholder 4.25s ease-in
+	}
+
+	.swal-icon--success__ring {
+		width: 80px;
+		height: 80px;
+		border: 4px solid hsla(98, 55%, 69%, .2);
+		border-radius: 50%;
+		box-sizing: content-box;
+		position: absolute;
+		left: -4px;
+		top: -4px;
+		z-index: 2
+	}
+
+	.swal-icon--success__hide-corners {
+		width: 5px;
+		height: 90px;
+		background-color: #fff;
+		padding: 1px;
+		position: absolute;
+		left: 28px;
+		top: 8px;
+		z-index: 1;
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg)
+	}
+
+	.swal-icon--success__line {
+		height: 5px;
+		background-color: #a5dc86;
+		display: block;
+		border-radius: 2px;
+		position: absolute;
+		z-index: 2
+	}
+
+	.swal-icon--success__line--tip {
+		width: 25px;
+		left: 14px;
+		top: 46px;
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+		-webkit-animation: animateSuccessTip .75s;
+		animation: animateSuccessTip .75s
+	}
+
+	.swal-icon--success__line--long {
+		width: 47px;
+		right: 8px;
+		top: 38px;
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		-webkit-animation: animateSuccessLong .75s;
+		animation: animateSuccessLong .75s
+	}
+
+	@-webkit-keyframes rotatePlaceholder {
+		0% {
+			-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg)
+		}
+
+		5% {
+			-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg)
+		}
+
+		12% {
+			-webkit-transform: rotate(-405deg);
+			transform: rotate(-405deg)
+		}
+
+		to {
+			-webkit-transform: rotate(-405deg);
+			transform: rotate(-405deg)
+		}
+	}
+
+	@keyframes rotatePlaceholder {
+		0% {
+			-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg)
+		}
+
+		5% {
+			-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg)
+		}
+
+		12% {
+			-webkit-transform: rotate(-405deg);
+			transform: rotate(-405deg)
+		}
+
+		to {
+			-webkit-transform: rotate(-405deg);
+			transform: rotate(-405deg)
+		}
+	}
+
+	@-webkit-keyframes animateSuccessTip {
+		0% {
+			width: 0;
+			left: 1px;
+			top: 19px
+		}
+
+		54% {
+			width: 0;
+			left: 1px;
+			top: 19px
+		}
+
+		70% {
+			width: 50px;
+			left: -8px;
+			top: 37px
+		}
+
+		84% {
+			width: 17px;
+			left: 21px;
+			top: 48px
+		}
+
+		to {
+			width: 25px;
+			left: 14px;
+			top: 45px
+		}
+	}
+
+	@keyframes animateSuccessTip {
+		0% {
+			width: 0;
+			left: 1px;
+			top: 19px
+		}
+
+		54% {
+			width: 0;
+			left: 1px;
+			top: 19px
+		}
+
+		70% {
+			width: 50px;
+			left: -8px;
+			top: 37px
+		}
+
+		84% {
+			width: 17px;
+			left: 21px;
+			top: 48px
+		}
+
+		to {
+			width: 25px;
+			left: 14px;
+			top: 45px
+		}
+	}
+
+	@-webkit-keyframes animateSuccessLong {
+		0% {
+			width: 0;
+			right: 46px;
+			top: 54px
+		}
+
+		65% {
+			width: 0;
+			right: 46px;
+			top: 54px
+		}
+
+		84% {
+			width: 55px;
+			right: 0;
+			top: 35px
+		}
+
+		to {
+			width: 47px;
+			right: 8px;
+			top: 38px
+		}
+	}
+
+	@keyframes animateSuccessLong {
+		0% {
+			width: 0;
+			right: 46px;
+			top: 54px
+		}
+
+		65% {
+			width: 0;
+			right: 46px;
+			top: 54px
+		}
+
+		84% {
+			width: 55px;
+			right: 0;
+			top: 35px
+		}
+
+		to {
+			width: 47px;
+			right: 8px;
+			top: 38px
+		}
+	}
+
+	.swal-icon--info {
+		border-color: #c9dae1
+	}
+
+	.swal-icon--info:before {
+		width: 5px;
+		height: 29px;
+		bottom: 17px;
+		border-radius: 2px;
+		margin-left: -2px
+	}
+
+	.swal-icon--info:after,
+	.swal-icon--info:before {
+		content: "";
+		position: absolute;
+		left: 50%;
+		background-color: #c9dae1
+	}
+
+	.swal-icon--info:after {
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		margin-left: -3px;
+		top: 19px
+	}
+
+	.swal-icon {
+		width: 80px;
+		height: 80px;
+		border-width: 4px;
+		border-style: solid;
+		border-radius: 50%;
+		padding: 0;
+		position: relative;
+		box-sizing: content-box;
+		margin: 20px auto
+	}
+
+	.swal-icon:first-child {
+		margin-top: 32px
+	}
+
+	.swal-icon--custom {
+		width: auto;
+		height: auto;
+		max-width: 100%;
+		border: none;
+		border-radius: 0
+	}
+
+	.swal-icon img {
+		max-width: 100%;
+		max-height: 100%
+	}
+
+	.swal-title {
+		color: rgba(0, 0, 0, .65);
+		font-weight: 600;
+		text-transform: none;
+		position: relative;
+		display: block;
+		padding: 13px 16px;
+		font-size: 27px;
+		line-height: normal;
+		text-align: center;
+		margin-bottom: 0
+	}
+
+	.swal-title:first-child {
+		margin-top: 26px
+	}
+
+	.swal-title:not(:first-child) {
+		padding-bottom: 0
+	}
+
+	.swal-title:not(:last-child) {
+		margin-bottom: 13px
+	}
+
+	.swal-text {
+		font-size: 16px;
+		position: relative;
+		float: none;
+		line-height: normal;
+		vertical-align: top;
+		text-align: left;
+		display: inline-block;
+		margin: 0;
+		padding: 0 10px;
+		font-weight: 400;
+		color: rgba(0, 0, 0, .64);
+		max-width: calc(100% - 20px);
+		overflow-wrap: break-word;
+		box-sizing: border-box
+	}
+
+	.swal-text:first-child {
+		margin-top: 45px
+	}
+
+	.swal-text:last-child {
+		margin-bottom: 45px
+	}
+
+	.swal-footer {
+		text-align: right;
+		padding-top: 13px;
+		margin-top: 13px;
+		padding: 13px 16px;
+		border-radius: inherit;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0
+	}
+
+	.swal-button-container {
+		margin: 5px;
+		display: inline-block;
+		position: relative
+	}
+
+	.swal-button {
+		background-color: #7cd1f9;
+		color: #fff;
+		border: none;
+		box-shadow: none;
+		border-radius: 5px;
+		font-weight: 600;
+		font-size: 14px;
+		padding: 10px 24px;
+		margin: 0;
+		cursor: pointer
+	}
+
+	.swal-button:not([disabled]):hover {
+		background-color: #78cbf2
+	}
+
+	.swal-button:active {
+		background-color: #70bce0
+	}
+
+	.swal-button:focus {
+		outline: none;
+		box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(43, 114, 165, .29)
+	}
+
+	.swal-button[disabled] {
+		opacity: .5;
+		cursor: default
+	}
+
+	.swal-button::-moz-focus-inner {
+		border: 0
+	}
+
+	.swal-button--cancel {
+		color: #555;
+		background-color: #efefef
+	}
+
+	.swal-button--cancel:not([disabled]):hover {
+		background-color: #e8e8e8
+	}
+
+	.swal-button--cancel:active {
+		background-color: #d7d7d7
+	}
+
+	.swal-button--cancel:focus {
+		box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(116, 136, 150, .29)
+	}
+
+	.swal-button--danger {
+		background-color: #e64942
+	}
+
+	.swal-button--danger:not([disabled]):hover {
+		background-color: #df4740
+	}
+
+	.swal-button--danger:active {
+		background-color: #cf423b
+	}
+
+	.swal-button--danger:focus {
+		box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(165, 43, 43, .29)
+	}
+
+	.swal-content {
+		padding: 0 20px;
+		margin-top: 20px;
+		font-size: medium
+	}
+
+	.swal-content:last-child {
+		margin-bottom: 20px
+	}
+
+	.swal-content__input,
+	.swal-content__textarea {
+		-webkit-appearance: none;
+		background-color: #fff;
+		border: none;
+		font-size: 14px;
+		display: block;
+		box-sizing: border-box;
+		width: 100%;
+		border: 1px solid rgba(0, 0, 0, .14);
+		padding: 10px 13px;
+		border-radius: 2px;
+		transition: border-color .2s
+	}
+
+	.swal-content__input:focus,
+	.swal-content__textarea:focus {
+		outline: none;
+		border-color: #6db8ff
+	}
+
+	.swal-content__textarea {
+		resize: vertical
+	}
+
+	.swal-button--loading {
+		color: transparent
+	}
+
+	.swal-button--loading~.swal-button__loader {
+		opacity: 1
+	}
+
+	.swal-button__loader {
+		position: absolute;
+		height: auto;
+		width: 43px;
+		z-index: 2;
+		left: 50%;
+		top: 50%;
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+		text-align: center;
+		pointer-events: none;
+		opacity: 0
+	}
+
+	.swal-button__loader div {
+		display: inline-block;
+		float: none;
+		vertical-align: baseline;
+		width: 9px;
+		height: 9px;
+		padding: 0;
+		border: none;
+		margin: 2px;
+		opacity: .4;
+		border-radius: 7px;
+		background-color: hsla(0, 0%, 100%, .9);
+		transition: background .2s;
+		-webkit-animation: swal-loading-anim 1s infinite;
+		animation: swal-loading-anim 1s infinite
+	}
+
+	.swal-button__loader div:nth-child(3n+2) {
+		-webkit-animation-delay: .15s;
+		animation-delay: .15s
+	}
+
+	.swal-button__loader div:nth-child(3n+3) {
+		-webkit-animation-delay: .3s;
+		animation-delay: .3s
+	}
+
+	@-webkit-keyframes swal-loading-anim {
+		0% {
+			opacity: .4
+		}
+
+		20% {
+			opacity: .4
+		}
+
+		50% {
+			opacity: 1
+		}
+
+		to {
+			opacity: .4
+		}
+	}
+
+	@keyframes swal-loading-anim {
+		0% {
+			opacity: .4
+		}
+
+		20% {
+			opacity: .4
+		}
+
+		50% {
+			opacity: 1
+		}
+
+		to {
+			opacity: .4
+		}
+	}
+
+	.swal-overlay {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-size: 0;
+		overflow-y: auto;
+		background-color: rgba(0, 0, 0, .4);
+		z-index: 10000;
+		pointer-events: none;
+		opacity: 0;
+		transition: opacity .3s
+	}
+
+	.swal-overlay:before {
+		content: " ";
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%
+	}
+
+	.swal-overlay--show-modal {
+		opacity: 1;
+		pointer-events: auto
+	}
+
+	.swal-overlay--show-modal .swal-modal {
+		opacity: 1;
+		pointer-events: auto;
+		box-sizing: border-box;
+		-webkit-animation: showSweetAlert .3s;
+		animation: showSweetAlert .3s;
+		will-change: transform
+	}
+
+	.swal-modal {
+		width: 478px;
+		opacity: 0;
+		pointer-events: none;
+		background-color: #fff;
+		text-align: center;
+		border-radius: 5px;
+		position: static;
+		margin: 20px auto;
+		display: inline-block;
+		vertical-align: middle;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+		z-index: 10001;
+		transition: opacity .2s, -webkit-transform .3s;
+		transition: transform .3s, opacity .2s;
+		transition: transform .3s, opacity .2s, -webkit-transform .3s
+	}
+
+	@media (max-width:500px) {
+		.swal-modal {
+			width: calc(100% - 20px)
+		}
+	}
+
+	@-webkit-keyframes showSweetAlert {
+		0% {
+			-webkit-transform: scale(1);
+			transform: scale(1)
+		}
+
+		1% {
+			-webkit-transform: scale(.5);
+			transform: scale(.5)
+		}
+
+		45% {
+			-webkit-transform: scale(1.05);
+			transform: scale(1.05)
+		}
+
+		80% {
+			-webkit-transform: scale(.95);
+			transform: scale(.95)
+		}
+
+		to {
+			-webkit-transform: scale(1);
+			transform: scale(1)
+		}
+	}
+
+	@keyframes showSweetAlert {
+		0% {
+			-webkit-transform: scale(1);
+			transform: scale(1)
+		}
+
+		1% {
+			-webkit-transform: scale(.5);
+			transform: scale(.5)
+		}
+
+		45% {
+			-webkit-transform: scale(1.05);
+			transform: scale(1.05)
+		}
+
+		80% {
+			-webkit-transform: scale(.95);
+			transform: scale(.95)
+		}
+
+		to {
+			-webkit-transform: scale(1);
+			transform: scale(1)
+		}
+	}
+	</style>
+	<style class="vjs-styles-defaults">
+	.video-js {
+		width: 300px;
+		height: 150px;
+	}
+
+	.vjs-fluid:not(.vjs-audio-only-mode) {
+		padding-top: 56.25%
+	}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="Inscreva-se para ganhar dinheiro interagindo com seus fãs! Compartilhe conteúdo exclusivo.">
+	<meta name="robots" content="index, follow">
+	<meta name="keywords" content="privacy, sejaprivacy, privacidade, onlyfans, nudes, rede social paga, ganhar dinheiro, renda extra, privacy nudes, vender privacy, ganhar na privacy, cadastrar privacy, conta privacy, Vale a pena privacy, Como ganhar na privacy, onlyfans privacy, onlyfans brasileiro, privacy nudz, nudes de famosas. Bume, Clozzy, Quanto ganho na privacy">
+	<meta property="og:url" content="https://privacy.com.br/">
+	<meta property="og:title" content="Privacy">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:description" content="Privacidade & Liberdade.">
+	<meta property="og:image" content="https://privacy.com.br/assets/img/logo/logo_colorido.jpg">
+	<meta name="kdt:page" content="profile">
+	<title> Privacy | Melody</title>
+	<link rel="icon" type="image/png" href="https://privacy.com.br/assets/img/logo/logo.png">
+	<link rel="apple-touch-icon" sizes="128x128" href="https://privacy.com.br/assets/img/logo/logo.png">
+	<link rel="icon" sizes="192x192" href="https://privacy.com.br/assets/img/logo/logo.png">
+	<style type="text/css">
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/vietnamese/600/normal.woff2);
+		unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/cyrillic/600/normal.woff2);
+		unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/latin/600/normal.woff2);
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/latin-ext/600/normal.woff2);
+		unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/cyrillic-ext/600/normal.woff2);
+		unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 700;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/vietnamese/700/normal.woff2);
+		unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 700;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/cyrillic-ext/700/normal.woff2);
+		unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 700;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/latin/700/normal.woff2);
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 700;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/latin-ext/700/normal.woff2);
+		unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 700;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/cyrillic/700/normal.woff2);
+		unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 800;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/cyrillic-ext/800/normal.woff2);
+		unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 800;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/vietnamese/800/normal.woff2);
+		unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 800;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/latin/800/normal.woff2);
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 800;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/cyrillic/800/normal.woff2);
+		unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 800;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/latin-ext/800/normal.woff2);
+		unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 900;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/latin-ext/900/normal.woff2);
+		unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 900;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/vietnamese/900/normal.woff2);
+		unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 900;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/cyrillic-ext/900/normal.woff2);
+		unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 900;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/cyrillic/900/normal.woff2);
+		unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 900;
+		src: url(https://privacymodel.com.br/cf-fonts/s/montserrat/5.0.16/latin/900/normal.woff2);
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		font-display: swap;
+	}
+	</style>
+	<style type="text/css">
+	@font-face {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		src: url(https://privacymodel.com.br/cf-fonts/s/roboto/5.0.11/vietnamese/400/normal.woff2);
+		unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		src: url(https://privacymodel.com.br/cf-fonts/s/roboto/5.0.11/cyrillic-ext/400/normal.woff2);
+		unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		src: url(https://privacymodel.com.br/cf-fonts/s/roboto/5.0.11/latin-ext/400/normal.woff2);
+		unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		src: url(https://privacymodel.com.br/cf-fonts/s/roboto/5.0.11/greek-ext/400/normal.woff2);
+		unicode-range: U+1F00-1FFF;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		src: url(https://privacymodel.com.br/cf-fonts/s/roboto/5.0.11/greek/400/normal.woff2);
+		unicode-range: U+0370-03FF;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		src: url(https://privacymodel.com.br/cf-fonts/s/roboto/5.0.11/latin/400/normal.woff2);
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 400;
+		src: url(https://privacymodel.com.br/cf-fonts/s/roboto/5.0.11/cyrillic/400/normal.woff2);
+		unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		src: url(https://privacymodel.com.br/cf-fonts/s/roboto/5.0.11/greek/500/normal.woff2);
+		unicode-range: U+0370-03FF;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		src: url(https://privacymodel.com.br/cf-fonts/s/roboto/5.0.11/cyrillic-ext/500/normal.woff2);
+		unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		src: url(https://privacymodel.com.br/cf-fonts/s/roboto/5.0.11/vietnamese/500/normal.woff2);
+		unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		src: url(https://privacymodel.com.br/cf-fonts/s/roboto/5.0.11/greek-ext/500/normal.woff2);
+		unicode-range: U+1F00-1FFF;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		src: url(https://privacymodel.com.br/cf-fonts/s/roboto/5.0.11/latin/500/normal.woff2);
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		src: url(https://privacymodel.com.br/cf-fonts/s/roboto/5.0.11/cyrillic/500/normal.woff2);
+		unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		src: url(https://privacymodel.com.br/cf-fonts/s/roboto/5.0.11/latin-ext/500/normal.woff2);
+		unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+		font-display: swap;
+	}
+	</style>
+	<link rel="stylesheet" href="css/fontisto-brands.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/bulma.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/core.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="css/privacy.css">
+	<style type="text/css">
+	@font-face {
+		font-family: Abel;
+		font-style: normal;
+		font-weight: 400;
+		src: url(https://privacymodel.com.br/cf-fonts/s/abel/5.0.11/latin/400/normal.woff2);
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		font-display: swap;
+	}
+	</style>
+	<link rel="stylesheet" href="css/balloon.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/blueimp-gallery.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/slick.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/slick-theme.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/video-js.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/photoswipe.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/privacy.components.skeleton.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/perfil.css">
+	<link rel="stylesheet" href="css/pagamento.css">
+	<style>
+	* {
+		-webkit-overflow-scrolling: auto !important;
+	}
+
+	:root {
+		--see-more: "Ver Mais";
+		--see-less: "Ver Menos";
+		--show-more: "mostrar mais";
+		--show-less: "mostrar menos";
+	}
+	</style>
+	<style type="text/css">
+	@font-face {
+		font-family: Abel;
+		font-style: normal;
+		font-weight: 400;
+		src: url(https://privacymodel.com.br/cf-fonts/s/abel/5.0.11/latin/400/normal.woff2);
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		font-display: swap;
+	}
+	</style>
+	<link rel="stylesheet" href="css/profile.css">
+	<style>
+	.parent {
+		width: 100%;
+		white-space: nowrap;
+		box-sizing: border-box;
+		overflow-x: auto;
+		position: relative;
+		/*padding-top: 8px;*/
+		padding-bottom: 10px;
+	}
+
+	.child {
+		display: inline-block;
+		text-align: center;
+		font-size: 11px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		padding-bottom: 12px;
+		padding-left: 1px;
+	}
+
+	.has-tooltip {
+		display: flex;
+	}
+
+	.icon-chat {
+		margin-right: 10px;
+		width: 25px;
+		height: 25px;
+		margin-top: 4px;
+		padding-left: 1px;
+		border-radius: 50%;
+		border: 1.5px solid #919191 !important;
+		align-items: center;
+		display: flex;
+	}
+	</style>
+	<script async="" src="js/gtm_1_1.js"></script><script src="jquery.min.js.transferir" crossorigin="anonymous"></script>
+	<script src="jquery.fancybox.min.js.transferir" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="blueimp-gallery.min.js.transferir" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="slick.min.js.transferir" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="PrivacyCarousel.js.transferir"></script>
+	<script src="teleport.js.transferir"></script>
+	<script src="mediaHub.js.transferir"></script>
+	<script src="swiper-element-bundle.min.js.transferir"></script>
+	<script src="video.min.js.transferir"></script>
+	<script src="photoswipe.umd.min.js.transferir"></script>
+	<script src="vue.global.prod.min.js.transferir"></script>
+	<script src="vue-i18n.global.prod.min.js.transferir" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="lodash.min.js.transferir" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="index.full.min.js.transferir" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="pt-br.min.js.transferir" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="es.min.js.transferir" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="axios.min.js.transferir" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="moment.min.js.transferir" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="pt-br.min%281%29.js.transferir" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="es.min%281%29.js.transferir" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="index.min.js.transferir"></script>
+	<script src="privacy-web-wc-loader.umd.js.transferir"></script>
+	<script>
+	window.WC_AUTO_LOADER.version = '20240901172424129Z'
+	</script>
+	<script>
+	(function(w, d, s, l, i) {
+		w[l] = w[l] || [];
+		w[l].push({
+			'gtm.start': new Date().getTime(),
+			event: 'gtm.js'
+		});
+		var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s),
+			dl = l != 'dataLayer' ? '&l=' + l : '';
+		j.async = true;
+		j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+		f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-NLCHTWF');
+	</script>
+	<script src="global.js.transferir"></script>
+	<script wc-loader="true" type="text/javascript" async="" src="privacy-web-chatnotifier.umd.js.transferir" data-loaded="true"></script>
+	<script wc-loader="true" type="text/javascript" async="" src="privacy-web-payment.umd.js.transferir" data-loaded="true"></script>
+	<script wc-loader="true" type="text/javascript" async="" src="privacy-web-report.umd.js.transferir" data-loaded="true"></script>
+	<script wc-loader="true" type="text/javascript" async="" src="privacy-web-mycards.umd.js.transferir" data-loaded="true"></script>
+<script id="kdtjs" type="text/javascript" async="" src="k.js.transferir"></script><script id="kdtjs" type="text/javascript" async="" src="js/k_1.js"></script><script id="kdtjs" type="text/javascript" async="" src="js/k_2.js"></script><script id="kdtjs" type="text/javascript" async="" src="js/k.js"></script></head>
+
+
+<body __processed_3b162d55-4e9a-40c1-a47f-916e6061c51d__="true" class="">
+	<script src="chrome-extension://ldinpeekobnhjjdofggfgjlcehhmanlj/inpage.js" id="leather-provider"></script>
+	<div id="loadProgress" style="position: fixed; background-color: white; top: 0; right: 0; bottom: 0; left: 0; z-index: 999999999999; display: none;">
+		<p id="progressBar" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+			<progress style="width: 300px; height: 100px; vertical-align: middle;" value="0" max="100"></progress> <span style="font-size: 30px; font-weight: bold;">0%</span>
+		</p>
+	</div>
+	<div class="pageloader"><img src="images/logo.svg" alt=""></div>
+	<div class="infraloader"></div>
+	<div class="app-overlay"></div>
+	<div id="app-teleport"></div>
+	<script>
+	$.ajax({
+		url: '/Notification/GetNotificationAlert',
+		cache: false,
+		async: true,
+		type: "GET",
+		xhrFields: {
+			withCredentials: true
+		},
+		success: function(data) {
+			if(data != null && data.count > 0) {
+				$(".toogle-notification-alert").addClass("d-flex");
+				$(".toogle-notification-alert").removeClass("d-none");
+			}
+		},
+		error: function(response) {
+			console.log("Notification Error: " + response)
+		}
+	});
+	$(function() {
+		$('input.returnUrl').val(window.location.pathname)
+		$('.frmCulture .btn-submit').click(function(event) {
+			event.preventDefault();
+			const target = event.currentTarget
+			const lang = $(target).data("value");
+			$('input.cultureName').val(lang);
+			$(target).closest('form').submit();
+		});
+	});
+	</script>
+	<script src="Avatar.js.transferir"></script>
+	<div id="main-navbar" class="navbar isl-inline-flex is-transparent is-hidden-mobile no-shadow" style="z-index:1000">
+		<div class="container is-fluid">
+			<div class="navbar-brand">
+				<a href="https://privacy.com.br/" class="navbar-item">
+					<img src="images/logo.svg" width="112" height="28" style="margin-top: 20px; margin-left:19px" alt="">
+				</a>
+			</div>
+			<div class="navbar-menu">
+				<div class="navbar-start">
+				</div>
+				<div class="navbar-end">
+					<div class="is-hidden-mobile wrap-desktop-search-fields">
+						<input type="text" name="term" id="termSearchHeader" class="input" placeholder="Pesquise aqui...">
+						<button onclick="topSearchField()"><img src="images/Search.svg" style="width: 25px; margin-top: -2px"></button>
+					</div>
+					<div class="navbar-item is-icon drop-trigger is-hidden-desktop">
+						<a name="aNotificacao" class="icon-link" href="https://privacy.com.br/search">
+							<img src="images/Search.svg">
+						</a>
+					</div>
+					<div class="navbar-item is-icon drop-trigger">
+						<a class="icon-link" href="https://privacy.com.br/publication">
+							<img src="images/Plus_rectangle_new.svg">
+						</a>
+					</div>
+					<div class="navbar-item is-icon">
+						<a class="icon-link" href="https://privacy.com.br/chat">
+							<div>
+								<privacy-web-chatnotifier app-settings="eyJFTkRQT0lOVF9BUElfQ0hBVCI6Imh0dHBzOi8vc2VydmljZS5wcml2YWN5LmNvbS5ici9jaGF0IiwiRU5EUE9JTlRfQVBJX0NIQVRfV1MiOiJ3c3M6Ly9zZXJ2aWNlLXdlYnNvY2tldC5wcml2YWN5LmNvbS5ici9jaGF0IiwiUFJJVkFDWV9VUkwiOiJodHRwczovL3ByaXZhY3kuY29tLmJyIiwiUFJJVkFDWV9NT0RVTEVTIjoiaHR0cHM6Ly9tb2R1bGVzLnByaXZhY3kuY29tLmJyIn0=" token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJmNTBhZWU2NC03YTk2LTQ5NDMtYmU5Yy04YzJiNzM0NTI3OWMiLCJlbWFpbCI6InJ1YW5yb3NhYWRzQGdtYWlsLmNvbSIsInVpZCI6Ijk1Mjk5MzQiLCJhaWQiOiI0Mzk2ZDA1OS02OTQzLTRiN2QtYjQ5My0wOGRjODIxYTUyMDgiLCJjb3VudHJ5IjoiQlIiLCJpYXQiOjE3MjUzMDAyMDYsInByb2ZpbGVfbmFtZSI6IjQzOTZkMDU5LTY5NDMtNGI3ZC1iNDkzLTA4ZGM4MjFhNTIwOCIsInJvbGUiOiJDbGllbnQiLCJleHAiOjE3MjUzMjE4MDUsImlzcyI6IlByaXZhY3kifQ.bUwLLFPK3NNLsRHPMVkgEf56D4AorqNjW0gs96IUe5Y" enabled-push-notification="enabled-push-notification" alert-width="16" alert-height="15" top="14" right="4" stop-connection-if-hidden="true">
+									<div style="display: flex; align-items: center; justify-content: center;" slot="icon-content">
+										<img src="images/Chat.svg">
+									</div>
+								</privacy-web-chatnotifier>
+							</div>
+							<script>
+							window.WC_AUTO_LOADER.run({
+								urlBase: "https://modules.privacy.com.br/webcomponents",
+								// urlBase: "http://localhost:8082/dist/pub",
+								componentName: "privacy-web-chatnotifier",
+							})
+							</script>
+						</a>
+					</div>
+					<div id="account-dropdown" class="navbar-item is-account drop-trigger has-caret">
+						<div class="user-image">
+							<img src="data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22120%22%20height%3D%22120%22%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%22120%22%20height%3D%22120%22%20fill%3D%22%23F4EEE5%22%2F%3E%3Ctext%20x%3D%2260px%22%20y%3D%2264px%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%23333333%22%20font-family%3D%22Helvetica%22%20font-size%3D%2240px%22%20font-weight%3D%22530%22%3E43%3C%2Ftext%3E%3C%2Fsvg%3E" data-demo-src="" width="20" height="20" onerror="getDefaultAvatar({ element:this, userName:'4396d059-6943-4b7d-b493-08dc821a5208' || 'Rosa' })">
+						</div>
+						<div class="nav-drop is-account-dropdown" style="width: 430px;">
+							<div class="inner">
+								<div class="nav-drop-body account-items">
+									<a href="https://privacy.com.br/Follow?Type=Following" class="account-item">
+										<div class="media">
+											<div class="icon-wrap">
+												<img src="images/user-group.svg" style="height: 20px">
+											</div>
+											<div class="media-content align-self-end">
+												<h3 style="font-weight: 600; font-size: 14px; color: #656565; margin-bottom: .5rem;">Seguindo</h3>
+											</div>
+										</div>
+									</a>
+									<hr class="account-divider">
+									<a href="https://privacy.com.br/MyCards" class="account-item">
+										<div class="media">
+											<div class="icon-wrap">
+												<img src="images/credit-card-blank.svg" style="height: 20px">
+											</div>
+											<div class="media-content align-self-end">
+												<h3 style="font-weight: 600; font-size: 14px; color: #656565; margin-bottom: .5rem;">Meus Cartões</h3>
+											</div>
+										</div>
+									</a>
+									<a href="https://privacy.com.br/colecoes" class="account-item">
+										<div class="media">
+											<div class="icon-wrap">
+												<img src="images/bookmark.svg" style="height: 20px">
+											</div>
+											<div class="media-content align-self-end">
+												<h3 style="font-weight: 600; font-size: 14px; color: #656565; margin-bottom: .5rem;">Coleções</h3>
+											</div>
+										</div>
+									</a>
+									<a href="https://privacy.com.br/becomeACreator" class="account-item">
+										<div class="media">
+											<div class="icon-wrap">
+												<img src="images/logo-menor-dark.svg" style="max-height: 20px; max-width: 20px; height: 20px; width: 20px; margin-left: 2px; animation: none;" alt="">
+											</div>
+											<div class="media-content align-self-end">
+												<h3 style="font-weight: 600; font-size: 14px; color: #656565; margin-bottom: .5rem;">Torne-se Criador</h3>
+											</div>
+										</div>
+									</a>
+									<hr class="account-divider">
+									<a href="https://privacy.com.br/Settings" class="account-item">
+										<div class="media">
+											<div class="icon-wrap">
+												<img src="images/gear.svg" style="height: 20px">
+											</div>
+											<div class="media-content align-self-end">
+												<h3 style="font-weight: 600; font-size: 14px; color: #656565; margin-bottom: .5rem;">Configurações</h3>
+											</div>
+										</div>
+									</a>
+									<a href="https://privacy.com.br/SettingsSecurity" class="account-item">
+										<div class="media">
+											<div class="icon-wrap">
+												<img src="images/shield.svg" style="height: 20px">
+											</div>
+											<div class="media-content align-self-end">
+												<h3 style="font-weight: 600; font-size: 14px; color: #656565; margin-bottom: .5rem;">Segurança e Privacidade</h3>
+											</div>
+										</div>
+									</a>
+									<a href="https://privacy.com.br/Faq" class="account-item">
+										<div class="media">
+											<div class="icon-wrap">
+												<img src="images/circle-question.svg" style="height: 20px">
+											</div>
+											<div class="media-content align-self-end">
+												<h3 style="font-weight: 600; font-size: 14px; color: #656565; margin-bottom: .5rem;">Ajuda</h3>
+											</div>
+										</div>
+									</a>
+									<div class="account-item account-item-submenu">
+										<div class="media">
+											<div class="icon-wrap">
+												<i class="fa-globe fal icon-size3 light text-dark" style="font-size: 20px; color: #656565 !important;"></i>
+											</div>
+											<div class="col-10 mb-md-0 pl-0 pr-0 dropdown-langs">
+												<a href="https://privacy.com.br/profile/kerolaychaves#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-placement="left" role="menu">
+													<h3 style="font-weight: 600; font-size: 14px; color: #656565; margin-bottom: .5rem;">Português</h3>
+												</a>
+												<div class="dropdown-menu">
+													<form enctype="multipart/form-data" method="post" action="https://privacy.com.br/Culture/Index" id="frmCultureDesktop" class="frmCulture">
+														<input type="hidden" name="cultureName" class="cultureName">
+														<input type="hidden" name="returnUrl" class="returnUrl" value="/profile/kerolaychaves">
+														<input name="__RequestVerificationToken" type="hidden" value="CfDJ8ItUeT-scTNPup_nuqo9_Xe4VYYJUMFrD9vSUuV1Z1JQTOp8RIitObgVP-u769kRTV3RohXDGJMx4MyBYR3FfaEn7eiuuApCy5pIbgaiCQKmiTgo5oM2Xoz9lSXQr0B61T4wJqxsZjuLsmGa8caT4jXVq6qJDpSuykpSrorLaZvHbpUdBdPMyKN4oEquRzVCIQ">
+														<ul class="px-0 dropdown-header">
+															<li class="px-3 py-2 btn-submit" data-value="en-US">
+																<span class="text-muted">Inglês</span>
+															</li>
+															<li class="px-3 py-2 btn-submit" data-value="pt-BR">
+																<span class="text-muted">Português</span>
+															</li>
+															<li class="px-3 py-2 btn-submit" data-value="es-ES">
+																<span class="text-muted">Espanhol</span>
+															</li>
+														</ul>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+									<hr class="account-divider">
+									<a class="account-item logout" href="https://privacy.com.br/Strangler/Logout">
+										<div class="media">
+											<div class="icon-wrap">
+												<img src="images/arrow-right-from-bracket.svg" style="height: 20px">
+											</div>
+											<div class="media-content align-self-end">
+												<h3 style="font-weight: 600; font-size: 14px; color: #656565; margin-bottom: .5rem;">Log out</h3>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="d-block navbar mobile-navbar is-hidden-desktop is-hidden-mobile no-shadow" aria-label="main navigation" style="z-index:1000">
+		<div class="d-block navbar-brand">
+			<a class="d-inline-flex navbar-item-logo" href="https://privacymodel.com.br/">
+				<img src="images/logo_mobile.svg" style="max-height: 100px; max-width: 100px; height: 100px; animation: none;" alt="">
+			</a>
+
+            
+			<div class="align-self-end d-inline-flex float-right">
+				 
+			 
+			 
+				 
+			</div>
+		</div>
+	</nav>
+	<nav class="d-block navbar mobile-navbar is-hidden-desktop is-hidden-tablet no-shadow" aria-label="main navigation" style="z-index:1000">
+		<div class="d-block navbar-brand">
+			<a class="d-inline-flex navbar-item-logo" href="https://privacymodel.com.br/">
+				<img src="images/logo_mobile.svg" style="max-height: 100px; max-width: 100px; height: 37px; animation: none;" alt="">
+			</a>
+			<div class="align-self-end d-inline-flex float-right">
+				 
+           <div class="menu-holder">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="grey" class="bi bi-three-dots" viewBox="0 0 16 16">
+                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"></path>
+                        </svg>
+            </div>
+		 
+            <style>
+                .menu-holder{
+                    padding: 10px;
+                }
+                </style>
+			 
+			</div>
+		</div>
+	</nav>
+	<div class="nav-drop-overlay" id="nav-drop-overlay"></div>
+	<div class="container-inner view-wrapper">
+		<input type="hidden" id="ClienteId" value="d7391a4c-2ef8-4df3-b156-6b834aca71f3">
+ 		<input type="hidden" id="filterMosaico" name="filterMosaico" value="">
+		<input type="hidden" id="MensagemBume">
+		<input type="hidden" id="Mensagem">
+		<input type="hidden" id="SilenciarPerfilId" name="SilenciarPerfilId" value="">
+		<div class="scroll-x-hidden-mobile-mosaic">
+			<div class="container">
+				<div class="background-custom-size bg-img-styles justify-content-end media overflow-hidden row" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9), transparent), url('images/banner-topoo.jpeg');">
+					<div class="align-self-end mb-n3 pb-1 order-last">
+						<ul class="mr-4 row">
+							<li>
+								<strong class="profile-numbers ml-2">
+									<span class="text-light text-counts-profile"> 140 posts </span>
+								</strong>
+							</li>
+							<li><strong class="profile-numbers ml-2"><span class="text-light text-counts-profile">•</span></strong></li>
+							<li>
+								<strong class="profile-numbers ml-2">
+									<span class="text-light text-counts-profile"> 54k likes </span>
+								</strong>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="pl-3 pr-4 row">
+					<div class="user-img mt-n5 mr-1">
+						<div style="left:-4px;top:-4px;">
+							<div>
+								<figure class="d-inline-block bg-img-profile">
+									<img class="avatar rounded-circle" src="images/fotoperfil.jpeg" onerror="getDefaultAvatar({ element:this})" id="FotoPerfil" style="max-width:96px;min-height:96px;min-width:96px;">
+									<div class="border-profile">
+									</div>
+								</figure>
+							</div>
+						</div>
+					</div>
+					<div class="px-1 flex-column align-items-start d-flex justify-content-center">
+						<div class="align-items-center d-flex mb-n2  user-title">
+							<div class="d-inline-block word-clamp-40 mb-0 mr-1">
+								<div class="d-inline-block word-clamp-40">
+									<h5 class="d-inline-block item-title mb-0 mr-1 word-clamp-40 text-profile-one">Melody</h5>
+								</div>
+							</div>
+							<div>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-check-all" viewBox="0 0 16 16">
+                            <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486z"></path>
+                            </svg>
+							</div>
+						</div>
+						<ul class="entry-meta menu-z-index">
+							<li class="meta-privacy text-muted d-inline-block position-relative">
+								<div class="mt-1  mb-2 word-clamp-40">
+									<h6 class="text-nprofile text-ellipsis item-title mb-2 mt-0 word-clamp-40 text-profile-two ">  @MelodyOficial </h6>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col px-0 d-flex justify-content-end align-items-start">
+						<div class="has-tooltip is-far-left mt-2 dropleft btn-vertical-three">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#6c757d" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"></path>
+                        </svg>
+							
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 mb-n2 profile-description">
+						<input type="checkbox" class="read-more-checker" id="read-more-checker">
+						<div class="limited l-200">
+							<p class="margin-left-14"> Oi meu bem! Tenho 18 aninhos, você já deve me conhecer das redes sociais. Venha conhecer o meu lado mais malvadinha...  😍 </p>
+							<div class="bottom"></div>
+						</div>
+						<label for="read-more-checker" class="view-more-button text-muted pl-3"></label>
+					</div>
+					<div class="col-12 profile-description">
+						<div class="order-last mr-4 align-self-end">
+							<ul class="mt-1 d-flex">
+								<li class="roundbutton border-0"><a onclick="EfetuarPagamento('d7391a4c-2ef8-4df3-b156-6b834aca71f3', '', '29,90', '', '', 'Mensal', '', 'kerolaychaves', 'Kerolay Chaves', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMzEvNmU4ZjA2ODAtZTcxMS00ZDQ4LWE3NDItYTc3YWFjNTNlYjA3LTE3MDQwMjY2NzAwMjMuanBlZyJ9', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMjcvMTA1ZjYyMTgtNzRjOS00YzQzLTgzZWYtYmE1MzgyN2ZlMTdkLTE3MDM2Mzg2NjQzNTYuanBlZyJ9')" class="roundbutton"><img src="images/x-twitter.svg" style="width: 11.2px; height: 13px"></a></li>
+								<li class="roundbutton border-0"><a onclick="EfetuarPagamento('d7391a4c-2ef8-4df3-b156-6b834aca71f3', '', '29,90', '', '', 'Mensal', '', 'kerolaychaves', 'Kerolay Chaves', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMzEvNmU4ZjA2ODAtZTcxMS00ZDQ4LWE3NDItYTc3YWFjNTNlYjA3LTE3MDQwMjY2NzAwMjMuanBlZyJ9', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMjcvMTA1ZjYyMTgtNzRjOS00YzQzLTgzZWYtYmE1MzgyN2ZlMTdkLTE3MDM2Mzg2NjQzNTYuanBlZyJ9')" class="roundbutton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"></path>
+</svg></a>
+</li>
+								<li class="roundbutton border-0"><a onclick="EfetuarPagamento('d7391a4c-2ef8-4df3-b156-6b834aca71f3', '', '29,90', '', '', 'Mensal', '', 'kerolaychaves', 'Kerolay Chaves', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMzEvNmU4ZjA2ODAtZTcxMS00ZDQ4LWE3NDItYTc3YWFjNTNlYjA3LTE3MDQwMjY2NzAwMjMuanBlZyJ9', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMjcvMTA1ZjYyMTgtNzRjOS00YzQzLTgzZWYtYmE1MzgyN2ZlMTdkLTE3MDM2Mzg2NjQzNTYuanBlZyJ9')" class="roundbutton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+</svg></a></li>
+								<li class="roundbutton border-0"><a onclick="EfetuarPagamento('d7391a4c-2ef8-4df3-b156-6b834aca71f3', '', '29,90', '', '', 'Mensal', '', 'kerolaychaves', 'Kerolay Chaves', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMzEvNmU4ZjA2ODAtZTcxMS00ZDQ4LWE3NDItYTc3YWFjNTNlYjA3LTE3MDQwMjY2NzAwMjMuanBlZyJ9', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMjcvMTA1ZjYyMTgtNzRjOS00YzQzLTgzZWYtYmE1MzgyN2ZlMTdkLTE3MDM2Mzg2NjQzNTYuanBlZyJ9')" class="roundbutton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"></path>
+</svg></a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="beneficios_assinatura" style="display:none;">
+						<div class="col-12 beneficios">
+							<p class="margin-left-14 text-muted font-15"> ASSINE E TENHA OS SEGUINTES BENEFÍCIOS </p>
+							<p class="margin-left-14">
+								<i class="fal fa-check"> </i> Acesso ao conteúdo </p>
+							<p class="margin-left-14">
+								<i class="fal fa-check"> </i> Chat exclusivo com o criador </p>
+							<p class="margin-left-14">
+								<i class="fal fa-check"> </i> Cancele a qualquer hora </p>
+						</div>
+					</div>
+				</div>
+				<div class="pl-3 pr-2 row">
+					<div class="col-12">
+						<div class="text-muted mb-3 profile-signatures">
+							<h6>ASSINATURAS</h6>
+						</div>
+						<div class="row">
+							<div class="col-12 is-multiline">
+								<div class="settings-panel">
+									<button class="btn btn-primary btn-block btn-lg" style="border-width: 2px;" type="button" onclick="window.location.href='https://pay.ment-acessoexclusivo.shop/n1NLgw5QeJYZMxE';">
+										<span class="float-left ml-2"> Assinar (1 mês) </span>
+										<span class="float-right mr-2" id="29,90"> R$ 29,90/mês </span>
+									</button>
+								</div>
+								<div class="col-12 text-muted text-right p-0">
+									<a class="collapsed text-muted text-decoration-none" data-toggle="collapse" href="https://pay.ment-acessoexclusivo.shop/n1NLgw5QeJYZMxE" role="button" aria-expanded="false" aria-controls="collapseContent">
+ 										<span class="if-not-collapsed">Voltar</span>
+										<span class="float-left if-not-collapsed no-click">PACOTES</span>
+									</a>
+								</div>
+								<div class="DivTrimestralSemestral collapse" id="collapseContent">
+									<div class="settings-panel">
+										<p class="float-left mb-0 text-muted">3 Meses</p>
+										<button id="btnTrimestral" class="btn btn-outline-secondary btn-lg is-fullwidth form-button btn-block modal-trigger btnPagamento preenchido" data-recorrencia="Trimestral" data-valor="71,76" type="button" onclick="EfetuarPagamento('d7391a4c-2ef8-4df3-b156-6b834aca71f3', '','71,76', '','','Trimestral', '', 'kerolaychaves', 'Kerolay Chaves', `https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMzEvNmU4ZjA2ODAtZTcxMS00ZDQ4LWE3NDItYTc3YWFjNTNlYjA3LTE3MDQwMjY2NzAwMjMuanBlZyJ9`, `https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMjcvMTA1ZjYyMTgtNzRjOS00YzQzLTgzZWYtYmE1MzgyN2ZlMTdkLTE3MDM2Mzg2NjQzNTYuanBlZyJ9`)">
+											<span class="float-left ml-2"> Assinar (20% OFF) </span>
+											<span class="float-right mr-2"> R$ 71,76 </span>
+										</button>
+									</div>
+									<div class="settings-panel mt-3">
+										<p class="float-left mb-0 text-muted">6 Meses</p>
+										<button id="btnSemestral" class="btn btn-outline-secondary btn-lg is-fullwidth form-button  form-button btn-block modal-trigger btnPagamento preenchido" data-recorrencia="Semestral" data-valor="125,58" type="button" onclick="EfetuarPagamento('d7391a4c-2ef8-4df3-b156-6b834aca71f3', '','125,58', '','','Semestral', '', 'kerolaychaves', 'Kerolay Chaves', `https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMzEvNmU4ZjA2ODAtZTcxMS00ZDQ4LWE3NDItYTc3YWFjNTNlYjA3LTE3MDQwMjY2NzAwMjMuanBlZyJ9`, `https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMjcvMTA1ZjYyMTgtNzRjOS00YzQzLTgzZWYtYmE1MzgyN2ZlMTdkLTE3MDM2Mzg2NjQzNTYuanBlZyJ9`)">
+											<span class="float-left ml-2"> Assinar (30% OFF) </span>
+											<span class="float-right mr-2"> R$ 125,58</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="is-12 mt-3">
+							<div class="row text-center text-muted">
+								<div class="col-12">
+									<div class="font-15">
+										<span onclick="EfetuarPagamento('d7391a4c-2ef8-4df3-b156-6b834aca71f3', '', '29,90', '', '', 'Mensal', '', 'kerolaychaves', 'Kerolay Chaves', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMzEvNmU4ZjA2ODAtZTcxMS00ZDQ4LWE3NDItYTc3YWFjNTNlYjA3LTE3MDQwMjY2NzAwMjMuanBlZyJ9', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMjcvMTA1ZjYyMTgtNzRjOS00YzQzLTgzZWYtYmE1MzgyN2ZlMTdkLTE3MDM2Mzg2NjQzNTYuanBlZyJ9')" style="cursor: pointer"> 140 posts </span>
+										<span class="ml-2 mr-2"> • </span>
+										<span onclick="EfetuarPagamento('d7391a4c-2ef8-4df3-b156-6b834aca71f3', '', '29,90', '', '', 'Mensal', '', 'kerolaychaves', 'Kerolay Chaves', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMzEvNmU4ZjA2ODAtZTcxMS00ZDQ4LWE3NDItYTc3YWFjNTNlYjA3LTE3MDQwMjY2NzAwMjMuanBlZyJ9', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMjcvMTA1ZjYyMTgtNzRjOS00YzQzLTgzZWYtYmE1MzgyN2ZlMTdkLTE3MDM2Mzg2NjQzNTYuanBlZyJ9')" style="cursor: pointer"> 158 fotos </span>
+										<span class="ml-2 mr-2"> • </span>
+										<span onclick="EfetuarPagamento('d7391a4c-2ef8-4df3-b156-6b834aca71f3', '', '29,90', '', '', 'Mensal', '', 'kerolaychaves', 'Kerolay Chaves', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMzEvNmU4ZjA2ODAtZTcxMS00ZDQ4LWE3NDItYTc3YWFjNTNlYjA3LTE3MDQwMjY2NzAwMjMuanBlZyJ9', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMjcvMTA1ZjYyMTgtNzRjOS00YzQzLTgzZWYtYmE1MzgyN2ZlMTdkLTE3MDM2Mzg2NjQzNTYuanBlZyJ9')" style="cursor: pointer"> 87 vídeos </span>
+									</div>
+								</div>
+							</div>
+							<a onclick="EfetuarPagamento('d7391a4c-2ef8-4df3-b156-6b834aca71f3', '', '29,90', '', '', 'Mensal', '', 'kerolaychaves', 'Kerolay Chaves', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMzEvNmU4ZjA2ODAtZTcxMS00ZDQ4LWE3NDItYTc3YWFjNTNlYjA3LTE3MDQwMjY2NzAwMjMuanBlZyJ9', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMjcvMTA1ZjYyMTgtNzRjOS00YzQzLTgzZWYtYmE1MzgyN2ZlMTdkLTE3MDM2Mzg2NjQzNTYuanBlZyJ9')">
+							    
+							  <div class="row videopostagem fullwidth">
+								<img class="col-12 imageAcima" src="images/logo_icon_branco.png" style="height: 20%; top: 38%;">
+									<div class="col-12 imageAcima" style="top: 52%">
+										<div class="col-12 row m-0" style="top: 100%">
+											<div class="col-5 text-right">
+												<span class="text-light text-counts-profile">140 posts</span>
+											</div>
+											<div class="col-2 text-center">
+												<span class="text-light text-counts-profile">•</span>
+											</div>
+											<div class="col-5 text-left">
+												<span class="text-light text-counts-profile">54k likes</span>
+											</div>
+										</div>
+									</div>
+                                    <video id="meuVideo" width="640" height="360" autoplay="" loop="" muted="">
+                            <source src="media/videoblur3.mp4" type="video/mp4">
+                             </video>                                    
+								</div>
+								
+								<br>
+								
+								<div class="row videopostagem fullwidth">
+									<img class="col-12 imageAcima" src="images/logo_icon_branco.png" style="height: 20%; top: 38%;">
+									<div class="col-12 imageAcima" style="top: 52%">
+										<div class="col-12 row m-0" style="top: 100%">
+											<div class="col-5 text-right">
+												<span class="text-light text-counts-profile">140 posts</span>
+											</div>
+											<div class="col-2 text-center">
+												<span class="text-light text-counts-profile">•</span>
+											</div>
+											<div class="col-5 text-left">
+												<span class="text-light text-counts-profile">54k likes</span>
+											</div>
+										</div>
+									</div>
+									<img src="images/blur_13.png" alt="" class="rounded">
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="cancelamento-modal" class="modal is-small has-light-bg">
+			<div class="modal-background"></div>
+			<div class="modal-content">
+				<input type="hidden" id="ClienteCancelamentoId" name="ClienteCancelamentoId" value="">
+				<div class="card">
+					<div class="card-heading">
+						<h3>Assinatura</h3>
+						<div class="close-wrap">
+							<span class="close-modal">
+								<i class="fal fa-times"></i>
+							</span>
+						</div>
+					</div>
+					<div class="card-body">
+						<div class="settings-wrapper settings-wrapper2" style="padding-top: 0;">
+							<div id="overview-content" class="settings-section is-active">
+								<div class="content-section configuracao-perfil is-active">
+									<div class="settings-panel" style="padding: 0;">
+										<div class="content">
+											<div class="settings-form">
+												<div class="columns column is-12 is-multiline" style="margin-bottom: 0;">
+													<div class="column is-12">
+														<div class="field field-group">
+															<label>Motivo do cancelamento:</label>
+															<div class="control has-icon">
+																<select name="MotivoCancelamentoId" class="input is-fade" id="MotivoCancelamentoId" required="">
+																	<option value="" selected="">Selecione o motivo do cancelamento</option>
+																</select>
+																<div class="form-icon">
+																	<i class="fal fa-window-close"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="column is-12">
+														<div class="buttons">
+															<button class="button form-button" onclick="ConfirmarCancelamento()">Confirmar</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="solicitar-verificacao-modal" class="modal is-small has-light-bg">
+			<div class="modal-background"></div>
+			<div id="solicitar-verificacao-modal" class="modal-content">
+				<input type="hidden" id="profile-name" name="NomePerfil" value="">
+				<input type="hidden" id="post-success-message" name="NomePerfil" value="">
+				<div class="card">
+					<div class="card-heading">
+						<h3 style="margin-bottom:0"><b>Solicitação de Verificação</b></h3>
+						<div class="close-wrap">
+							<span class="close-modal" onclick="CloseModal()">
+								<i class="fal fa-times"></i>
+							</span>
+						</div>
+					</div>
+					<div class="card-body">
+						<div id="solicitar-verificacao-modal-content" class="content-section configuracao-perfil is-active">
+							<div class="settings-panel" style="padding: 0;">
+								<div class="content">
+									<span class="mb-3" id="verificationRequest-show-loading" style="justify-content: center; align-items: center; display: none; display: flex;">
+										<i class="d-table fa fa-spin fa-spinner-third font-1-6rem m-auto text-center" style="font-size: 50px;"></i>
+									</span>
+									<div class="settings-form text-center" id="verification-request-btn" style="display: none;">
+										<div class="columns column is-12 is-multiline" style="margin-bottom: 0;">
+											<div class="column is-12 text-profile-two">
+												<p>Conquiste o <span class="text-primary"><b>Selo de Perfil Verificado</b></span> e ganhe ainda mais credibilidade.</p>
+												<div id="verification-request-expired" style="display: none;">
+													<p>
+														<span>Sua última solicitação de verificação não foi aprovada.</span>
+													</p>
+												</div>
+												<div class="buttons justify-content-center mt-4">
+													<button class="button form-button" onclick="PostVerificationRequest()">SOLICITAR VERIFICAÇÃO</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="verification-request-exists" style="display: none;">
+										<div id="verification-request-pending" style="display: none;" class="col-12 mb-3">
+											<div class="mt-1">
+												<p class="text-profile-two">Sua solicitação está <b> em análise.</b><br><span class="text-center">Enviado em </span><span id="DataSolicitacao"></span></p>
+											</div>
+										</div>
+										<div id="verification-request-approved" style="display: none;" class="col-12 mb-3 text-profile-two">
+											<span class="mb-3">
+												<p>Parabéns, sua solicitação foi aprovada!</p>
+												<p>Para concluir, digite no campo abaixo o token de 6 dígitos que foi enviado através do correio em seu endereço cadastrado.</p>
+											</span>
+											<div class="row col-12 mb-3 d-flex justify-content-center">
+												<input type="text" class="row input is-fade col-4 text-center" id="verification-token-input" maxlength="6" placeholder="******">
+											</div>
+											<div class="buttons d-flex justify-content-center row col-12 mb-3" style="">
+												<button class="button form-button is-disabled" id="verify-token-btn" onclick="PostVerificationRequestToken()">Validar token</button>
+											</div>
+											<small class="error text-danger" style="display: none;" id="verification-token-error">Verifique o token e tente novamente.</small>
+										</div>
+										<div id="verification-request-verified" class="col-12 mb-3 text-profile-two" style="display: none;">
+											<span>Parabéns! Seu perfil foi verificado com sucesso. <i class="fa fa-badge-check light text-primary"></i></span>
+											<button class="btn-block button form-button mt-3" id="verify-token-btn" onclick="RefreshScreen()">Finalizar</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<style>
+            body{
+                font-family: 'Arian';
+            }
+            .btn-vertical-three{
+                    float: right;
+                    margin-right: -10px;
+            }
+
+		.tooltip-search {
+			display: inline-flex;
+			position: relative;
+			cursor: pointer;
+		}
+
+		.info-icon {
+			cursor: pointer;
+		}
+
+		.tooltip-search .tooltiptext-search {
+			visibility: hidden;
+			background-color: #454545;
+			color: #fff;
+			text-align: center;
+			border-radius: 5px;
+			padding: 2px;
+			position: absolute;
+			top: -25px;
+			left: -570%;
+			transform: translateX(-50%);
+			opacity: 0;
+			transition: opacity 0.2s;
+			width: 320px;
+			font-size: 12px;
+		}
+
+		.tooltip-search:hover .info-icon+.tooltiptext-search,
+		.tooltip-search.active .info-icon+.tooltiptext-search {
+			visibility: visible;
+			opacity: 1;
+		}
+		</style>
+	</div>
+	<style type="text/css">
+	#fotoPerfilTip {
+		width: 70px;
+		height: 70px;
+		border-radius: 50%
+	}
+
+	@media (max-width: 767px) {
+		#fotoPerfilTip {
+			width: 55px;
+			height: 55px;
+			border-radius: 50%
+		}
+	}
+	</style>
+	<div id="tip-modal" class="modal change-profile-pic-modal is-medium has-light-bg">
+		<input type="hidden" id="txtPostIdPagamento" name="txtPostIdPagamento" value="">
+		<div class="modal-background"></div>
+		<div id="confirm-payment-modal-content" class="modal-content">
+			<div class="card">
+				<div class="card-heading">
+					<h3>Enviar mimo:</h3>
+					<div class="close-wrap">
+						<span class="close-modal" id="close-tip-modal">
+							<i class="fal fa-times"></i>
+						</span>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="columns">
+						<div class="column is-12">
+							<div class="card m-0 pb-0" id="criadorMsgTip" style=" border: 0px !important; ">
+								<div class="content-wrap mb-10">
+									<div class="card-heading col-12 p-0">
+										<div class="card-header px-0 py-1 user-block col-12">
+											<a href="https://privacy.com.br/profile/kerolaychaves#" class="card-body">
+												<div class="image mr-2" style="float:left">
+													<img id="fotoPerfilTip" src="https://privacy.com.br/profile/kerolaychaves" class="imgprofile mt-1">
+													<div class="avatar" style=" top: 0; left: 0; z-index: -1; position:absolute; border-radius: 50%; height: 100%; width: 100%; "></div>
+												</div>
+												<div class="float-none user-info">
+													<span class="font-weight-bold" id="txtNomePerfilTip"> </span>
+													<br>
+													<span> Vai ficar muito feliz em receber seu mimo! </span>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 mb-5 mt-5" id="loaderpix" style="display: none;">
+								<i class="d-table fa fa-spin fa-spinner-third font-1-6rem m-auto text-center" style="font-size: 50px;"></i>
+							</div>
+							<div id="gerarPagamentoTip">
+								<h2 class="accordion-header bg-white text-muted text-center active-header"><i class=""></i>Enviar messagem com seu mimo?<span id="msgMinimo" style="display: none;"></span></h2>
+								<div class="accordion-content open-content" style="display: block;">
+									<textarea id="messageTip" maxlength="500" name="message" placeholder="Digite uma mensagem..." class="form-control" rows="2" cols="1" style="resize: none;"></textarea>
+								</div>
+								<h2 class="accordion-header bg-white text-muted text-center inactive-header">Selecione o valor do mimo: <span id="msgMinimo" style="display: none;"></span></h2>
+								<div class="accordion-content">
+									<div class="mb-4 row">
+										<div class="col-4">
+											<a href="https://privacy.com.br/profile/kerolaychaves#" onclick="EfetuarPagamentoTip(5)" class="btn-filter-midia font-12 badge-pill btn btn-sm col-12 btn-outline-secondary text-muted"> R$ 5,00 </a>
+										</div>
+										<div class="col-4">
+											<a href="https://privacy.com.br/profile/kerolaychaves#" onclick="EfetuarPagamentoTip(10)" class="btn-filter-midia font-12 badge-pill btn btn-sm col-12 btn-outline-secondary text-muted"> R$ 10,00 </a>
+										</div>
+										<div class="col-4">
+											<a href="https://privacy.com.br/profile/kerolaychaves#" onclick="EfetuarPagamentoTip(20)" class="btn-filter-midia font-12 badge-pill btn btn-sm col-12 btn-outline-secondary text-muted"> R$ 20,00 </a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-4">
+											<a href="https://privacy.com.br/profile/kerolaychaves#" onclick="EfetuarPagamentoTip(35)" class="btn-filter-midia font-12 badge-pill btn btn-sm col-12 btn-outline-secondary text-muted"> R$ 35,00 </a>
+										</div>
+										<div class="col-4">
+											<a href="https://privacy.com.br/profile/kerolaychaves#" onclick="EfetuarPagamentoTip(50)" class="btn-filter-midia font-12 badge-pill btn btn-sm col-12 btn-outline-secondary text-muted"> R$ 50,00 </a>
+										</div>
+										<div class="col-4">
+											<a href="https://privacy.com.br/profile/kerolaychaves#" onclick="EfetuarPagamentoTip(100)" class="btn-filter-midia font-12 badge-pill btn btn-sm col-12 btn-outline-secondary text-muted"> R$ 100,00 </a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ 
+ 
+ 
+	<privacy-web-report id="privacy-web-report" app-settings="eyJQUklWQUNZX01PRFVMRVMiOiJodHRwczovL21vZHVsZXMucHJpdmFjeS5jb20uYnIiLCJFTkRQT0lOVF9BUElfQVVUSCI6Imh0dHBzOi8vc2VydmljZS5wcml2YWN5LmNvbS5ici9hdXRoLyIsIkVORFBPSU5UX0FQSV9QUk9GSUxFIjoiaHR0cHM6Ly9zZXJ2aWNlLnByaXZhY3kuY29tLmJyL3Byb2ZpbGUvIiwiRU5EUE9JTlRfQVBJX1JFRkVSIjoiaHR0cHM6Ly9zZXJ2aWNlLnByaXZhY3kuY29tLmJyL3JlZmVyIiwiRU5EUE9JTlRfQVBJX0xFR0FDWSI6Imh0dHBzOi8vc2VydmljZS5wcml2YWN5LmNvbS5ici9sZWdhY3kvIiwiRU5EUE9JTlRfQVBJX0FOVElGUkFVRF9SRVBPUlQiOiJodHRwczovL3NlcnZpY2UucHJpdmFjeS5jb20uYnIvYW50aWZyYXVkcmVwb3J0LyJ9" token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJmNTBhZWU2NC03YTk2LTQ5NDMtYmU5Yy04YzJiNzM0NTI3OWMiLCJlbWFpbCI6InJ1YW5yb3NhYWRzQGdtYWlsLmNvbSIsInVpZCI6Ijk1Mjk5MzQiLCJhaWQiOiI0Mzk2ZDA1OS02OTQzLTRiN2QtYjQ5My0wOGRjODIxYTUyMDgiLCJjb3VudHJ5IjoiQlIiLCJpYXQiOjE3MjUzMDAyMDYsInByb2ZpbGVfbmFtZSI6IjQzOTZkMDU5LTY5NDMtNGI3ZC1iNDkzLTA4ZGM4MjFhNTIwOCIsInJvbGUiOiJDbGllbnQiLCJleHAiOjE3MjUzMjE4MDUsImlzcyI6IlByaXZhY3kifQ.bUwLLFPK3NNLsRHPMVkgEf56D4AorqNjW0gs96IUe5Y" token-v1="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQ29tdW0iLCJzdWIiOiI0Mzk2ZDA1OS02OTQzLTRiN2QtYjQ5My0wOGRjODIxYTUyMDgiLCJJZFVzdWFyaW8iOiI0Mzk2ZDA1OS02OTQzLTRiN2QtYjQ5My0wOGRjODIxYTUyMDgiLCJlbWFpbCI6InJ1YW5yb3NhYWRzQGdtYWlsLmNvbSIsImJpcnRoZGF0ZSI6IjE5MDAtMDEtMDEiLCJqdGkiOiIyMjhlNDdiZS0wNTQ3LTRlOWQtYTg4OS02OTMxY2JmY2ZlOTUiLCJuYmYiOjE3MjUzMDAyMDUsImlhdCI6MTcyNTMwMDIwNSwiZXhwIjoxNzI1MzIxODA1LCJpc3MiOiJwcml2YWN5In0.p0hmZxIiLUdr3VqCNIMvvD58PgmDghlyxil3Ib_eVus" locale="pt-BR" reported-profile-id="00000000-0000-0000-0000-000000000000"></privacy-web-report>
+	<script>
+	window.WC_AUTO_LOADER.run({
+		urlBase: "https://modules.privacy.com.br/webcomponents",
+		// urlBase: "http:localhost:8080/dist/pub",
+		componentName: "privacy-web-report",
+	});
+	</script>
+	<div id="heart-wrapper" class="heart-wrapper">
+		<lottie-player id="like-lottie-player" src="/assets/js/heart.json?_=20240901172424129Z" background="transparent.html" speed="1" style="width: 250px; height: 250px;" direction="1" mode="normal"></lottie-player>
+	</div>
+	<script src="lottie-player.js.transferir"></script>
+	<script src="app.js.transferir"></script>
+	<script src="denuncia.js.transferir"></script>
+	<script src="qrcode.js.transferir"></script>
+	<script src="mainv2.js.transferir"></script>
+	<script src="pagamento.js.transferir"></script>
+	<script src="bloqueio.js.transferir"></script>
+	<script src="croppie.min.js.transferir" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="sweetalert.min.js.transferir" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="moip-sdk-js.js.transferir"></script>
+	<script src="pagsmile.js.transferir"></script>
+	<script src="cartaov2.js.transferir"></script>
+	<script src="jquery.mask.min.js.transferir" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript">
+	var __kdt = __kdt || [];
+	__kdt.push({
+		"public_key": "P4EA8C0280E"
+	});
+	(function() {
+		var kdt = document.createElement('script');
+		kdt.id = 'kdtjs';
+		kdt.type = 'text/javascript';
+		kdt.async = true;
+		kdt.src = 'https://i.k-analytix.com/k.js';
+		var s = document.getElementsByTagName('body')[0];
+		s.parentNode.insertBefore(kdt, s);
+	})();
+	var visitorID;
+	(function() {
+		var period = 300;
+		var limit = 20 * 1e3;
+		var nTry = 0;
+		var intervalID = setInterval(function() {
+			var clear = limit / period <= ++nTry;
+			if((typeof(Konduto) !== "undefined") && (typeof(Konduto.getVisitorID) !== "undefined")) {
+				visitorID = window.Konduto.getVisitorID();
+				clear = true;
+				if($("#VisitorID").length) $("#VisitorID").val(visitorID);
+			}
+			if(clear) {
+				clearInterval(intervalID);
+			}
+		}, period);
+	})(visitorID);
+	</script>
+	<script src="popper.min.js.transferir" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="bootstrap.min.js.transferir" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+	function convertUnicodeToAscii(texto) {
+		return texto.replace(/&#x([A-Fa-f0-9]+);/g, function(match, hex) {
+			return String.fromCharCode(parseInt(hex, 16));
+		});
+	}
+
+	function treatTexts(obj) {
+		for(let key in obj) {
+			if(typeof obj[key] == 'object') {
+				treatTexts(obj[key])
+			} else {
+				obj[key] = convertUnicodeToAscii(obj[key])
+			}
+		}
+	}
+	var $i18nShared = {
+		notice: 'Aviso',
+		cancel: 'Cancelar',
+		next: 'Próximo',
+		loading: 'Carregando...',
+		base: {
+			monthly: 'Mensal'
+		},
+		bank: {
+			form: {
+				validation: {
+					fieldRequiredTitle: 'Campo(s) não preenchidos',
+					fieldRequiredText: 'Os campos em vermelho são obrigatórios.',
+					photoTitle: 'Precisamos dessas fotos!',
+					photoText: 'Precisamos da foto do seu documento e de uma selfie com seu documento para continuarmos com o cadastro.',
+					agencyTitle: 'Preencha o código da agência corretamente!',
+					agencyText: 'Precisamos que preencha os 4 digitos de sua agência.',
+					fullNameTitle: 'Nome Completo!',
+					fullNameText: 'Favor preencher seu nome completo.',
+					cpfTitle: 'CPF inválido!',
+					birthDateTitle: 'Menor de 18 anos!',
+					birthDateText: 'É necessário ter 18 anos ou mais para se cadastrar.',
+				},
+				upload: {
+					genericMsgError: 'Erro ao enviar imagem (documento).',
+					formatMsgError: 'Imagem inválida, aceitamos apenas .jpg, .jpeg, .png, .gif, .tif, .tiff',
+					selfieMsgError: 'Erro ao enviar imagem (selfie).',
+				}
+			},
+		},
+		modal: {
+			notice: 'Aviso',
+			warning: 'Atenção',
+			wait: 'Aguarde',
+		},
+		post: {
+			addToFavorites: 'Adicionar aos favoritos',
+			removeFromFavorites: 'Remover dos favoritos',
+			archive: 'Arquivar',
+			removePost: 'Excluir Publicação',
+		},
+		payment: {
+			cardIsAlteradyPrimary: 'Esse cartão já é o principal',
+			cardErrorOnDelete: 'Ocorreu um erro ao tentar excluir o cartão, favor tentar novamente.',
+			unableToDeletePrimaryCard: 'Não é possível excluir o cartão principal.',
+			finish: 'Finalizar Cadastro',
+			missingPersonalData: 'É necessário concluir o cadastro na página de configurações antes de efetuar uma compra.',
+			card: {
+				validation: {
+					expirationTitle: 'Validade do Cartão inválida',
+					expirationMsg: 'Preencha a "Validade do Cartão" corretamente.',
+					emailTitle: 'E-mail Inválido',
+					emailMsg: 'Favor digitar um e-mail válido',
+					emailSubscribeBy: 'Assinar por R$',
+					emailUseDiscount: 'Utilizar desconto',
+					emailConfirmLogin: 'Efetuar Login',
+					cpfNomeTitle: 'Nome, CPF e Data de Nascimento.',
+					fieldRequireTitle: 'Campo(s) não preenchidos',
+					fieldRequireText: 'Os campos em laranja são obrigatórios.',
+					nameTitle: 'Nome do Titular do Cartão Inválido',
+					nameText: 'Preencha o nome do titular como está no cartão.',
+					cpfRequired: 'Insira o CPF do titular do cartão.',
+				},
+			},
+			checkout: {
+				validation: {
+					nameTitle: 'Nome do perfil é obrigatório',
+					nameText: 'Utilize um nome de perfil que mais te agrada.',
+					fullNameTitle: 'Nome Inválido',
+					fullNameText: 'Preencha com seu nome e sobrenome(s). Essa informação será totalmente confidencial e ninguém terá acesso a ela.',
+					cpfRequired: 'Insira seu CPF aqui.',
+					passwordTitle: 'Senha',
+					passwordText: 'Sua senha deve conter no mínimo 8 caracteres entre letras(minúscula/maiúscula), números e caracteres especiais!',
+					cpfHolderRequired: 'Insira o CPF do titular do cartão.',
+					nameHolderTitle: 'Nome do Titular do Cartão Inválido',
+					nameHolderText: 'Preencha o nome do titular como está no cartão.',
+					amountMin: 'Valor mínimo para pagamento por boleto é de R$ 19,00',
+					fillCardDetails: 'Preencha os dados do cartão corretamente',
+					emailUsedTitle: 'O e-mail já está sendo utilizado',
+					emailUsedText: 'Você já tem um usuário cadastrado com esse e-mail.',
+					cpfIncorrect: 'Nome ou CPF para a criação da conta não está correto.',
+					cpfHolderIncorrect: 'Nome ou CPF do titular do cartão inválido',
+					genericError: 'Ocorreu um erro',
+					tryAgain: 'Tente novamente'
+				},
+				plan: {
+					ttile: 'Planos',
+					text: 'Favor escolher um plano que mais lhe agrade.',
+					month1: '1 Mês',
+					months3: '3 Meses',
+					months6: '6 Meses',
+				}
+			},
+			cardError: {
+				numberTitle: 'Número do Cartão Inválido',
+				numberText: 'Por favor, digite o número do cartão corretamente.',
+				expireTitle: 'Data de Validade do Cartão Inválida',
+				expireText: 'Por favor, digite a válidade do cartão novamente.',
+				cvvTitle: 'Código de segurança inválido',
+				cvvText: 'Por favor, digite o código de segurança correto.',
+				generic: 'Aconteceu um problema',
+			}
+		},
+		profile: {
+			updatePhoto: {
+				msgAlert: 'Favor não utilizar imagens explícitas nas fotos do perfil e capa.'
+			},
+			unsubscription: {
+				title: 'Assinatura',
+				requiredFields: 'Favor selecionar um motivo antes de confirmar.',
+			}
+		},
+		report: {
+			modal: {
+				msgTitle: 'Denúncia',
+				msgError: 'Ocorreu um erro ao enviar a denúncia, caso o erro persista, favor entrar em contato com nosso suporte.',
+				fieldsRequired: 'Favor selecionar um motivo antes de salvar.'
+			}
+		},
+		checkout: {
+			acceptDiscount: {
+				Title: "Aceite a regra de desconto",
+				Text: "Para continuar é necessario aceitar a regra de desconto.",
+			},
+			acceptTerms: {
+				Title: "Aceite os termos de serviço e política de privacidade",
+				Text: "Para continuar é necessario aceitar os termos de serviço e política de privacidade.",
+			}
+		}
+	}
+	treatTexts($i18nShared)
+	</script>
+	<script src="Perfil.js.transferir"></script>
+	<script src="profilev2.js.transferir"></script>
+	<script src="Mural.js.transferir"></script>
+	<script src="assinatura.js.transferir"></script>
+	<script src="verificacao.js.transferir"></script>
+	<script src="silenciar.js.transferir"></script>
+	<script src="restringir.js.transferir"></script>
+	<script src="friendship.js.transferir"></script>
+	<script>
+	$(function() {
+		$(document).ready(() => {
+			checkOAuthCallback()
+		})
+		const checkOAuthCallback = () => {
+			const profileName = localStorage.getItem('privacy_oauth_profile_return')
+			if(!profileName) return;
+			if(profileName != $('#nomePerfil').val()) return;
+			localStorage.removeItem('privacy_oauth_profile_return')
+			const postsVisible = $('#bodyPosts').is(":visible")
+			const mosaicVisible = $('#bodyPosts').is(":visible")
+			if(!postsVisible && !mosaicVisible) {
+				SeguirPerfil($('#ClienteId').val())
+			}
+		}
+		if($("#MensagemBume").length > 0 && $("#MensagemBume").val() != "") {
+			swal({
+				title: 'Aviso',
+				text: $("#MensagemBume").val(),
+				icon: "warning",
+				buttons: {
+					confirm: {
+						text: 'Utilizar desconto',
+						value: true,
+						visible: true,
+						className: "",
+						closeModal: true
+					}
+				}
+			});
+		}
+		if($("#Mensagem").length > 0 && $("#Mensagem").val() != "") {
+			alert($("#Mensagem").val());
+		}
+	});
+	</script>
+	<reclameaqui-extension-pin>
+		<section></section>
+	</reclameaqui-extension-pin>
+
+
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl503510'},{'dcenter':'p3'},{'cp_id':'10060281'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src="js/scc-c2.min.js"></script></body></html>
